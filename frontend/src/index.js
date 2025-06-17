@@ -12,15 +12,5 @@ root.render(
     </React.StrictMode>
 );
 
-// Service worker registration for offline functionality (optional)
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-                console.log('SW registered: ', registration);
-            })
-            .catch((registrationError) => {
-                console.log('SW registration failed: ', registrationError);
-            });
-    });
-}
+// Service worker registration disabled for development
+// Can be enabled later for production PWA functionality
