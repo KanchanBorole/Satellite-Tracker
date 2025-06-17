@@ -4,7 +4,7 @@ import React from 'react';
  * Home component - Landing page for Mission Board Dashboard
  * Displays mission overview and quick stats
  */
-function Home({ satellites, loading, error, onRefresh }) {
+function Home({ satellites, loading, error, onRefresh, onNavigate }) {
     
     // Calculate statistics
     const stats = {
@@ -35,7 +35,7 @@ function Home({ satellites, loading, error, onRefresh }) {
                                 <div className="hero-actions">
                                     <button 
                                         className="btn btn-primary btn-lg me-3"
-                                        onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'dashboard' }))}
+                                        onClick={() => onNavigate('dashboard')}
                                     >
                                         <i className="fas fa-chart-line me-2"></i>
                                         View Dashboard

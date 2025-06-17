@@ -86,7 +86,7 @@ function App() {
 
         switch (currentView) {
             case 'home':
-                return <Home {...commonProps} />;
+                return <Home {...commonProps} onNavigate={handleNavigation} />;
             case 'dashboard':
                 return <Dashboard {...commonProps} />;
             case 'history':
@@ -94,7 +94,7 @@ function App() {
             case 'videos':
                 return <LiveVideo {...commonProps} />;
             default:
-                return <Home {...commonProps} />;
+                return <Home {...commonProps} onNavigate={handleNavigation} />;
         }
     };
 
