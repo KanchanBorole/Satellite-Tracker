@@ -17,10 +17,10 @@ function Navbar({ currentView, onNavigate, satelliteCount = 0 }) {
         <nav className="navbar navbar-expand-lg navbar-dark mission-navbar">
             <div className="container-fluid">
                 {/* Brand */}
-                <a className="navbar-brand d-flex align-items-center" href="#" onClick={(e) => e.preventDefault()}>
+                <button className="navbar-brand d-flex align-items-center btn btn-link text-decoration-none" onClick={() => onNavigate('home')}>
                     <i className="fas fa-satellite me-2 brand-icon"></i>
                     <span className="brand-text">Mission Board</span>
-                </a>
+                </button>
 
                 {/* Mobile menu toggle */}
                 <button 

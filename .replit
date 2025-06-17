@@ -1,7 +1,8 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "java-17"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["openjdk"]
 
 [workflows]
 runButton = "Project"
@@ -15,6 +16,10 @@ author = "agent"
 task = "workflow.run"
 args = "Backend Server"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Frontend Server"
+
 [[workflows.workflow]]
 name = "Backend Server"
 author = "agent"
@@ -24,5 +29,22 @@ task = "shell.exec"
 args = "cd backend && javac *.java && java Main"
 waitForPort = 8000
 
+[[workflows.workflow]]
+name = "Frontend Server"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd frontend && npm start"
+waitForPort = 5000
+
 [deployment]
 run = ["sh", "-c", "cd backend && javac *.java && java Main"]
+
+[[ports]]
+localPort = 5000
+externalPort = 5000
+
+[[ports]]
+localPort = 8000
+externalPort = 80

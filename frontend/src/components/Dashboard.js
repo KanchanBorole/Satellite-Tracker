@@ -13,6 +13,7 @@ function Dashboard({ satellites, loading, error, onRefresh }) {
         if (satellites && satellites.length > 0) {
             processChartData();
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [satellites, selectedMetric]);
 
     const processChartData = () => {

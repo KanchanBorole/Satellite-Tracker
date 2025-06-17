@@ -58,6 +58,7 @@ function App() {
     // Load satellites on component mount
     useEffect(() => {
         fetchSatellites();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     /**
