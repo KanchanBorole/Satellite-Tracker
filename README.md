@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Mission Board Dashboard
+# Satellite Dashboard
 
 A comprehensive space mission tracking and satellite monitoring system with real-time data visualization, built with Java backend and React frontend.
 
