@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mission Board Dashboard
 
 A comprehensive space mission tracking and satellite monitoring system with real-time data visualization, built with Java backend and React frontend.
@@ -46,3 +47,7 @@ A comprehensive space mission tracking and satellite monitoring system with real
 
 
 
+=======
+# Satellite-Tracker
+Satellite Tracker Website - A full Stack with java web application that visualizes real-time and historical satellites telemetry data.
+>>>>>>> 70bd4f32cd5acecd1776182d89b4d3681e113caa
