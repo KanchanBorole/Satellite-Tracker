@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         try {
-            int port = 8000;
+            int port = 8080;
             SatelliteServer server = new SatelliteServer(port);
             server.start();
             System.out.println("Mission Board Dashboard server started on port " + port);

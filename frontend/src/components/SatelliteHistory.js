@@ -180,7 +180,7 @@ function SatelliteHistory({ satellites, loading, error, onRefresh }) {
                                 value={selectedStatus}
                                 onChange={(e) => setSelectedStatus(e.target.value)}
                             >
-                                <option value="all">All Statuses</option>
+                                <option value="all">Status</option>
                                 {statuses.map(status => (
                                     <option key={status} value={status}>{status}</option>
                                 ))}

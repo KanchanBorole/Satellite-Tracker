@@ -30,5 +30,19 @@ A comprehensive space mission tracking and satellite monitoring system with real
 - **Relational Design**: Normalized database with foreign key relationships
 - **Indexing**: Optimized queries for performance
 
-## 📁 Project Structure
+
+### Run Commands
+- Frontend : cd client
+             npm start
+             ** Do run command for install nodemodules and necessary packages before start if not installed.**
+             npm install
+             http://localhost:3000
+
+- Backend : cd Backend
+            javac Main.java
+            java Main
+
+### This project is fully based on Java and Full Stack with MySQL database.
+
+
 

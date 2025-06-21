@@ -23,8 +23,8 @@ function Home({ satellites, loading, error, onRefresh, onNavigate }) {
                         <div className="col-lg-6">
                             <div className="hero-content">
                                 <h1 className="hero-title">
-                                    Mission Board
-                                    <span className="hero-subtitle">Dashboard</span>
+                                    Satellite Dashboard
+                                    <span className="hero-subtitle">Mission Satellite Tracker</span>
                                 </h1>
                                 <p className="hero-description">
                                     Real-time satellite tracking and mission management system. 

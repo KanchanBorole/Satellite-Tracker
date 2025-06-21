@@ -124,7 +124,7 @@ function Dashboard({ satellites, loading, error, onRefresh }) {
                         <div className="col-md-8">
                             <h2 className="dashboard-title">
                                 <i className="fas fa-chart-line me-2"></i>
-                                Mission Dashboard
+                                Satellite Dashboard
                             </h2>
                             <p className="dashboard-subtitle">
                                 Real-time satellite tracking and mission analytics
